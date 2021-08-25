@@ -1,0 +1,136 @@
+.footer {
+  background: #FFFFFF;
+}
+
+.wrapper {
+  background: #ebecee;
+  padding: 60px 70px 50px;
+}
+
+.contactBlock {
+  display: flex;
+  justify-content: space-between;
+
+  .logos {
+    min-width: max-content;
+
+    .img {
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-family: Monument Extended, sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 31px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #303E54;
+      opacity: 0.4;
+    }
+  }
+
+  .contacts {
+    display: flex;
+
+    .infoBlock {
+      margin-left: 50px;
+      width: 175px;
+
+      @media screen and (min-width: 1440px) {
+
+        width: 220px;
+      }
+
+
+      .title {
+        font-family: Ermilov, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #303E54;
+        opacity: 0.4;
+      }
+
+      .hr {
+        opacity: 0.2;
+        height: 1px;
+        background-color: #303E54;
+        margin: 13px 0;
+      }
+
+      .info {
+        font-family: Ermilov, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 170%;
+        color: #303E54;
+
+        display: flex;
+        align-items: center;
+
+        .img {
+          margin-right: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.hr {
+  opacity: 0.4;
+  background-color: #303E54;
+  height: 1px;
+  margin: 30px 0 22px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+
+    .link {
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #0A142F;
+      opacity: 0.5;
+
+      margin: 0 24px 16px 0;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+
+    }
+  }
+
+  .copyright {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0A142F;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    min-width: max-content;
+  }
+}

@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+  }
+
+  .btnBlock {
+    display: flex;
+    align-items: center;
+
+    .btnContactUs {
+      font-family: Ermilov, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #FF2D46;
+
+      margin-right: 50px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      .underline {
+        height: 3px;
+        margin-top: 3px;
+        background-color: #FF2D46;
+      }
+    }
+
+    .controller {
+      width: 58px;
+      height: 58px;
+      background: #E63046;
+
+      padding: -0px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-right: 12px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+
+  display: flex;
+  scroll-behavior: smooth
+}

@@ -1,0 +1,188 @@
+.wrapper {
+  background: #303E54;
+  padding: 30px 70px 34px 70px;
+}
+
+.card {
+  width: 300px;
+  min-width: 300px;
+  margin: 30px 15px;
+  overflow: hidden;
+
+  position: relative;
+  box-shadow: 6px 6px 30px rgba(4, 29, 69, 0.4);
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .img {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+
+    img {
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+
+  .content {
+    margin-top: 248px;
+    padding: 33px 30px 20px 40px;
+    height: calc(100% - 248px);
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:before {
+      position: absolute;
+      top: 248px;
+      margin: -20px;
+    }
+
+    .review {
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 170%;
+      z-index: 1;
+    }
+
+    .bottom {
+      margin-top: 35px;
+
+      .hr {
+        opacity: 0.2;
+        height: 1px;
+        margin-bottom: 10px;
+      }
+
+      .name {
+        font-family: Ermilov, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 170%;
+      }
+
+      .counter {
+        font-family: Ermilov, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 170%;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+.card1 {
+  .img {
+    height: 248px;
+  }
+
+  .content {
+    background-color: #fff;
+
+    &:before {
+      content: url("../../images/quotes.svg");
+    }
+
+    .review {
+      color: #303E54;
+    }
+
+    .bottom {
+      .hr {
+        background-color: #303E54;
+      }
+
+      .name {
+        color: #E63046;
+      }
+
+      .counter {
+        color: #E63046;
+      }
+    }
+  }
+}
+
+.card2 {
+  .img {
+    height: 100%;
+  }
+
+  .content {
+    background: linear-gradient(180deg, rgba(48, 62, 84, 0) 0%, rgba(21, 29, 41, 0.75) 31.77%);
+
+    &:before {
+      content: url("../../images/quotes.svg");
+    }
+
+    .review {
+      color: #FFFFFF;
+    }
+
+    .bottom {
+      margin-top: 35px;
+
+      .hr {
+        background-color: #FFFFFF;
+      }
+
+      .name {
+        color: #FFFFFF;
+        opacity: 0.8;
+      }
+
+      .counter {
+        color: #FFFFFF;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.card3 {
+  .img {
+    height: 248px;
+  }
+
+  .content {
+    background: #C62442;
+
+    &:before {
+      content: url("../../images/emptyQuotes.svg");
+    }
+
+    .review {
+      color: #FFFFFF;
+    }
+
+    .bottom {
+      margin-top: 35px;
+
+      .hr {
+        background-color: #FFFFFF;
+      }
+
+      .name {
+        color: #FFFFFF;
+      }
+
+      .counter {
+        color: #FFFFFF;
+      }
+    }
+  }
+}

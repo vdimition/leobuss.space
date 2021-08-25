@@ -1,0 +1,96 @@
+.menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  background: linear-gradient(195.01deg, #C20E2F 23.08%, #B10116 208.87%);
+  border-radius: 20px;
+  padding: 20px 20px 20px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 10px;
+}
+
+.textLogo {
+  font-family: Monument Extended, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.logo {
+  position: absolute;
+  right: 50%;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnImage {
+  width: 50px;
+  height: 50px;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btnVector {
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  background: transparent;
+
+  cursor: pointer;
+
+  .img {
+    width: 32px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 10px 0 0 10px;
+
+    margin-left: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .phone {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    padding: 0 11px 0 7px;
+    background: transparent;
+  }
+}
