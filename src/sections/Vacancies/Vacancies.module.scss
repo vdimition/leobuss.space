@@ -1,0 +1,93 @@
+@import "src/fonts/index";
+
+.wrapper {
+  padding: 310px 70px 90px;
+  background: #303E54;
+  margin-top: -222px;
+}
+
+.card {
+  padding: 50px 30px 45px 45px;
+  min-width: 32%;
+  margin: 36px 30px 0 0;
+  background: #FFFFFF;
+  box-shadow: 6px 10px 30px rgba(48, 62, 84, 0.09);
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .cardContent {
+    .imgWrapper {
+      display: flex;
+      align-items: center;
+      height: 50px;
+
+      .img {
+
+      }
+    }
+
+    .title {
+      font-family: Ermilov, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 130%;
+      color: #E63046;
+    }
+
+    .subTitle {
+      font-family: Ermilov, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #303E54;
+      opacity: 0.4;
+
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 170%;
+      color: #303E54;
+
+      margin-bottom: 10px;
+    }
+  }
+
+  .btnContactUs {
+    font-family: Ermilov, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #E63046;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    .underline {
+      margin-top: 3px;
+      height: 3px;
+      background: #E63046;
+    }
+  }
+}

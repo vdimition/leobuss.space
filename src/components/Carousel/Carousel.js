@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import React, { useRef } from 'react';
 
 import arrowL from '../../images/arrowL.svg';
@@ -5,7 +6,13 @@ import arrowR from '../../images/arrowR.svg';
 
 import styles from './Carousel.module.scss';
 
-const Carousel = ({ title, children, scrollWidth }) => {
+const Carousel = ({
+  title,
+  children,
+  scrollWidth,
+  styleTitle = '',
+  styleHeader = '',
+}) => {
   const carousel = useRef(null);
 
   const handlerScroll = (width) => {
@@ -17,8 +24,8 @@ const Carousel = ({ title, children, scrollWidth }) => {
 
   return (
     <div>
-      <div className={styles.header}>
-        <div className={styles.title}>
+      <div className={clsx(styles.header, styleHeader)}>
+        <div className={styleTitle || styles.title}>
           {title}
         </div>
         <div className={styles.btnBlock}>

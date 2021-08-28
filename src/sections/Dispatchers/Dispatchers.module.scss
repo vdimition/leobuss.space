@@ -1,0 +1,58 @@
+@import "src/fonts/index";
+
+.wrapper {
+  padding: 40px;
+  border-radius: 23px;
+  overflow: hidden;
+  margin-top: -400px;
+}
+
+.content {
+  background: url("../../images/despachers.png");
+  background-size: cover;
+  border-radius: 23px;
+  background-position: center center;
+  position: relative;
+
+  height: 542px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  .bg {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.77%, rgba(0, 0, 0, 0.35) 73.42%, rgba(0, 0, 0, 0.7) 96.91%);
+    border-radius: 23px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .innerContent {
+    padding: 40px;
+    max-width: 760px;
+    z-index: 4;
+
+    .title {
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 58px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .description {
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+}
