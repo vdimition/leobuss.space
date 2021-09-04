@@ -12,6 +12,7 @@ const Carousel = ({
   scrollWidth,
   styleTitle = '',
   styleHeader = '',
+  hideShowMore = false,
 }) => {
   const carousel = useRef(null);
 
@@ -29,10 +30,12 @@ const Carousel = ({
           {title}
         </div>
         <div className={styles.btnBlock}>
-          <button type="button" className={styles.btnContactUs}>
-            Побачити усі
-            <div className={styles.underline} />
-          </button>
+          {!hideShowMore ? (
+            <button type="button" className={styles.btnContactUs}>
+              Побачити усі
+              <div className={styles.underline} />
+            </button>
+          ) : null}
           <button
             disabled={!carousel}
             onClick={() => handlerScroll(-scrollWidth)}

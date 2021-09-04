@@ -1,7 +1,8 @@
-font-face {
-  font-family: 'Ermilov', sans-serif;
+@font-face {
+  font-family: 'Ermilov';
   src: url('Ermilov/Ermilov.otf');
-  font-weight: 600;
+  font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {

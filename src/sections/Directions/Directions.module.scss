@@ -1,0 +1,182 @@
+@import "src/fonts/index";
+
+.modalContent {
+  max-width: 640px;
+  box-sizing: border-box;
+  padding: 28px 70px 60px 48px;
+  border-radius: 35px;
+  background: url("../../images/employment-bg2.png");
+
+  .flag {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 170%;
+    color: #303E54;
+  }
+
+  .title {
+    font-family: Ermilov, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 38px;
+    color: #303E54;
+  }
+
+  .subTitle {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-family: Ermilov, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #303E54;
+    opacity: 0.4;
+  }
+
+  .content {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    color: #303E54;
+  }
+
+  .contactUs {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+
+    .btn1 {
+      background: #E63046;
+      box-shadow: 3px 5px 20px rgba(119, 21, 33, 0.4);
+      border-radius: 12px;
+      padding: 20px 35px;
+      font-family: Ermilov, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      margin-right: 36px;
+      border: none;
+    }
+
+    .btn2 {
+      font-family: Ermilov, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #E63046;
+      background: transparent;
+      border: none;
+
+      .underline {
+        height: 3px;
+        background-color: #E63046;
+        margin-top: 3px;
+      }
+
+    }
+  }
+}
+
+.wrapper {
+  padding: 30px 70px;
+  background: #FFFFFF;
+  justify-content: space-between;
+
+  .container {
+    margin-top: -70px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 30px;
+
+    @media screen and (min-width: 1550px) {
+      grid-template-columns: repeat(4, minmax(330px, 1fr));
+    }
+  }
+}
+
+.card {
+  width: 100%;
+  min-width: 30%;
+  background: #FFFFFF;
+  border-radius: 35px;
+  box-shadow: 3px 7px 30px rgba(59, 77, 105, 0.13);
+
+  .bg {
+    background: url("../../images/bg-2.png");
+    border-radius: 35px;
+    height: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 23px 28px 48px 28px;
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(360deg, #FFFFFF -2.86%, rgba(255, 255, 255, 0.4) 100%);
+    border-radius: 35px;
+
+    .img {
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 170%;
+      color: #303E54;
+    }
+
+    .title {
+      font-family: Ermilov, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      color: #3B4D69;
+
+      font-size: 42px;
+      line-height: 38px;
+    }
+
+    .btnLearnMore {
+      font-family: Ermilov, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #E63046;
+
+      margin-top: 30px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+
+      .underline {
+        margin-top: 3px;
+        height: 3px;
+        background-color: #E63046;
+      }
+    }
+  }
+}

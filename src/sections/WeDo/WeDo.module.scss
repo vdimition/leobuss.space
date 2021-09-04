@@ -1,0 +1,95 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 70px;
+
+  .card {
+    filter: drop-shadow(3px 7px 30px rgba(59, 77, 105, 0.13));
+    width: 49%;
+    min-width: 500px;
+    background: url("../../images/registration-bg.png");
+    border-radius: 35px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(360deg, #FFFFFF -2.86%, rgba(255, 255, 255, 0.4) 100%);
+    }
+
+    .img {
+      z-index: 1;
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 27px;
+      overflow: hidden;
+
+      img {
+        min-width: 100%;
+        min-height: 100%;
+      }
+    }
+
+    .content {
+      z-index: 1;
+      width: 60%;
+      box-sizing: border-box;
+      padding: 86px 6px 86px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .title {
+        font-family: Ermilov, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 120%;
+        color: #303E54;
+      }
+
+      .subTitle {
+        margin-top: 9px;
+        font-family: Inter, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 170%;
+        color: #303E54;
+      }
+
+      .learnMore {
+        font-family: Ermilov, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #E63046;
+        margin-top: 28px;
+
+        background: transparent;
+        border: none;
+
+        .underline {
+          height: 3px;
+          background: #E63046;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}

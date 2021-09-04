@@ -10,7 +10,7 @@ import styles from './Vacancies.module.scss';
 
 const Vacancies = () => (
   <div className={styles.wrapper}>
-    <Carousel title="Вакансії" scrollWidth={300}>
+    <Carousel title="Вакансії" scrollWidth={300} hideShowMore>
       <div className={styles.card}>
         <div className={styles.cardContent}>
           <div className={styles.imgWrapper}>
