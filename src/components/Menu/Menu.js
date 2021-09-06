@@ -21,12 +21,12 @@ const Menu = () => {
           <img src={logo} alt="logo LeoBus" />
         </div>
         <div className={styles.btnWrapper}>
-          <button type="button" className={styles.btnImage}>
+          <a href="tel:+38 093 113 35 91" className={styles.btnImage}>
             <img src={viber} alt="viber" />
-          </button>
-          <button type="button" className={styles.btnImage}>
+          </a>
+          <a href="https://www.facebook.com/groups/leobus" className={styles.btnImage}>
             <img src={facebook} alt="facebook" />
-          </button>
+          </a>
           <button type="button" className={styles.btnVector} onClick={() => setIsOpenPopup(!isOpenPopup)}>
             <div className={styles.img}>
               <img src={vector} alt="vector" />
@@ -42,38 +42,48 @@ const Menu = () => {
               телефони
             </div>
             <div className={styles.line} />
-            <div className={styles.content}>
+            <a href="tel:+38 093 113 35 91" className={styles.content}>
               +38 093 113 35 91
-            </div>
+            </a>
             <div className={styles.line} />
-            <div className={styles.content}>
-              +38 093 113 35 91
-            </div>
+            <a href="tel:+380 12 245 45 45" className={styles.content}>
+              +380 12 245 45 45
+            </a>
             <div className={styles.line} />
             <div className={styles.title}>
               Соц. мережі
             </div>
             <div className={styles.line} />
-            <div className={styles.content}>
+            <a
+              href="https://www.youtube.com/watch?v=Pw9fAknuoEI"
+              target="_blank"
+              className={styles.content}
+              rel="noreferrer"
+            >
               <div className={styles.img}>
                 <img src={youtube} alt="youtube" />
               </div>
               YouTube
-            </div>
+            </a>
             <div className={styles.line} />
-            <div className={styles.content}>
+            <a href="https://www.instagram.com/leobus5/" target="_blank" className={styles.content} rel="noreferrer">
               <div className={styles.img}>
                 <img src={instagram} alt="instagram" />
               </div>
               Instagram
-            </div>
+            </a>
             <div className={styles.line} />
-            <div className={styles.content}>
+            <a
+              href="https://www.facebook.com/groups/leobus"
+              target="_blank"
+              className={styles.content}
+              rel="noreferrer"
+            >
               <div className={styles.img}>
                 <img src={messenger} alt="messenger" />
               </div>
               Messenger
-            </div>
+            </a>
             <div className={styles.line} />
           </div>
         ) : null}

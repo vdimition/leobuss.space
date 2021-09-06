@@ -8,7 +8,7 @@ import employment4 from '../../images/employment4.svg';
 import styles from './Employment.module.scss';
 
 const Employment = () => (
-  <div className={styles.wrapper}>
+  <div className={styles.wrapper} id="employment">
     <div className={styles.content}>
       <div className={styles.title}>
         Працевлаштування

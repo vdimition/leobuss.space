@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Dispatchers.module.scss';
 
 const Dispatchers = () => (
-  <div className={styles.wrapper}>
+  <div className={styles.wrapper} id="dispatchers">
     <div className={styles.content}>
       <div className={styles.bg} />
       <div className={styles.innerContent}>

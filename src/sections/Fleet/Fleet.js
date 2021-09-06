@@ -26,7 +26,7 @@ const Fleet = () => {
   );
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="fleet">
       <Carousel
         title="Автопарк"
         scrollWidth={530}
@@ -47,7 +47,7 @@ const Fleet = () => {
           <div className={clsx(styles.inner, styles.inner3)}>
             <div className={styles.title}>☝️</div>
             <div className={styles.content}>
-              Всі автобуси проходять технічне обслуговування перед кожним рейсом.
+              Всі мікроавтобуси проходять технічне обслуговування перед кожним рейсом.
               Обслуговуються тільки оригінальними запчастинами. Стаж водіїїв не менше 5 років.
               Ще було б добре додати сюди більше.
             </div>

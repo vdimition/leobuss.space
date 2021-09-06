@@ -1,11 +1,17 @@
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   padding: 65px 70px;
+
+  @media screen and (min-width: 1150px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 
   .card {
     filter: drop-shadow(3px 7px 30px rgba(59, 77, 105, 0.13));
-    width: 49%;
+    width: 100%;
     min-width: 500px;
     background: url("../../images/registration-bg.png");
     border-radius: 35px;
@@ -15,6 +21,10 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+
+    @media screen and (min-width: 1150px) {
+      width: 49%;
+    }
 
     .bg {
       position: absolute;
@@ -33,16 +43,21 @@
       align-items: center;
       border-radius: 27px;
       overflow: hidden;
+      background-size: cover;
+      max-width: 270px;
+    }
 
-      img {
-        min-width: 100%;
-        min-height: 100%;
-      }
+    .imgBg1 {
+        background: url("../../images/registration.png") no-repeat center center;
+    }
+    .imgBg2{
+      background: url("../../images/deliver.png") no-repeat center center;
     }
 
     .content {
       z-index: 1;
       width: 60%;
+      min-width: 350px;
       box-sizing: border-box;
       padding: 86px 6px 86px 22px;
       display: flex;
@@ -80,6 +95,7 @@
         text-transform: uppercase;
         color: #E63046;
         margin-top: 28px;
+        cursor: pointer;
 
         background: transparent;
         border: none;

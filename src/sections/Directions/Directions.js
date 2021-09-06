@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 
-import data from './data';
-
-import styles from './Directions.module.scss';
 import Modal from '../../components/Modal/Modal';
+import useGetCall from '../../hocks/useGetCall';
+
+import data from './data';
+import styles from './Directions.module.scss';
 
 const Directions = () => {
+  const { openWidget } = useGetCall();
   const [direction, setDirection] = useState(null);
 
   return (
     <div className={styles.wrapper}>
       {direction ? (
-        <Modal isOpen={direction} close={() => setDirection(null)}>
+        <Modal isOpen={!!direction} close={() => setDirection(null)}>
           <div className={styles.modalContent}>
             <div className={styles.flag}>
               {direction.flag}
@@ -19,25 +21,29 @@ const Directions = () => {
             <div className={styles.title}>
               {direction.country}
             </div>
-            <div className={styles.subTitle}>
-              маршрут:
-            </div>
-            <div className={styles.content}>
-              {direction.route.join(' — ')}
-            </div>
+            {direction.route.length ? (
+              <>
+                <div className={styles.subTitle}>
+                  міста:
+                </div>
+                <div className={styles.content}>
+                  {direction.route.join(', ')}
+                </div>
+              </>
+            ) : null}
             <div className={styles.subTitle}>
               Документи:
             </div>
             <div className={styles.content}>
-              {direction.documents.join(',')}
+              {direction.documents.join(', ')}
               .
             </div>
 
             <div className={styles.contactUs}>
-              <button className={styles.btn1} onClick={() => {}} type="button">
+              <button className={styles.btn1} onClick={openWidget} type="button">
                 Замовити дзвінок
               </button>
-              <button className={styles.btn2} onClick={() => {}} type="button">
+              <button className={styles.btn2} onClick={openWidget} type="button">
                 зв’язатись із нами
                 <div className={styles.underline} />
               </button>
@@ -45,7 +51,7 @@ const Directions = () => {
           </div>
         </Modal>
       ) : null }
-      <div className={styles.container}>
+      <div className={styles.container} id="directions">
         {data.map((direction) => (
           <div key={direction.country} className={styles.card}>
             <div className={styles.bg}>
