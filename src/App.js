@@ -5,6 +5,7 @@ import Menu from './components/Menu/Menu';
 import Fleet from './sections/Fleet/Fleet';
 import Footer from './sections/Footer/Footer';
 import Welcome from './sections/Welcome/Welcome';
+import Reviews from './sections/Reviews/Reviews';
 import Directions from './sections/Directions/Directions';
 import Vacancies from './sections/Vacancies/Vacancies';
 import Employment from './sections/Employment/Employment';
@@ -18,7 +19,7 @@ const App = () => (
     <Welcome />
     <Directions />
     <WeDo />
-    {/* <Reviews /> */}
+    <Reviews />
     <Fleet />
     <Employment />
     <Dispatchers />

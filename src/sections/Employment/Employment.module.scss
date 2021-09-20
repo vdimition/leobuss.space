@@ -1,7 +1,8 @@
 @import "src/fonts/index";
 
 .wrapper {
-  height: 968px;
+  //height: 968px;
+  height: 818px;
   width: 100%;
   position: relative;
   background: url("../../images/employment-bg3.png");
@@ -14,6 +15,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  box-sizing: border-box;
 
   .title {
     font-family: Inter, sans-serif;

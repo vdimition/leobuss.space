@@ -34,7 +34,7 @@ const WeDo = () => {
         <div className={styles.content}>
           <div>
             <div className={styles.title}>
-              Доставимо вантаж за адресою і з гаранією. Передача коштів
+              Доставимо вашу посилку за адресою і з гаранією. Передача коштів
             </div>
             <div className={styles.subTitle}>
               Великогабаритні перевезення, доступні ціни.

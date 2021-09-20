@@ -24,7 +24,9 @@ const Footer = () => (
             <div className={styles.title}>адреса</div>
             <div className={styles.hr} />
             <div className={styles.info}>
-              Бульвар Шевченка, 218 м. Черкаси
+              <div>Надпільна, 252</div>
+              {' '}
+              <div>м. Черкаси</div>
             </div>
             <div className={styles.hr} />
           </div>
@@ -49,24 +51,30 @@ const Footer = () => (
               rel="noreferrer"
               className={styles.info}
             >
-              <div className={styles.img}>
-                <img src={youtube} alt="youtube" />
+              <div className={styles.infoContent}>
+                <div className={styles.img}>
+                  <img src={youtube} alt="youtube" />
+                </div>
+                YouTube
               </div>
-              YouTube
             </a>
             <div className={styles.hr} />
             <a href="https://www.instagram.com/leobus5/" target="_blank" rel="noreferrer" className={styles.info}>
-              <div className={styles.img}>
-                <img src={instagram} alt="instagram" />
+              <div className={styles.infoContent}>
+                <div className={styles.img}>
+                  <img src={instagram} alt="instagram" />
+                </div>
+                Instagram
               </div>
-              Instagram
             </a>
             <div className={styles.hr} />
             <a href="https://www.facebook.com/groups/leobus" target="_blank" className={styles.info} rel="noreferrer">
-              <div className={styles.img}>
-                <img src={messenger} alt="messenger" />
+              <div className={styles.infoContent}>
+                <div className={styles.img}>
+                  <img src={messenger} alt="messenger" />
+                </div>
+                Messenger
               </div>
-              Messenger
             </a>
             <div className={styles.hr} />
           </div>
@@ -76,7 +84,6 @@ const Footer = () => (
       <div className={styles.links}>
         <div className={styles.menu}>
           <a href={'#directions' || ''} className={styles.link}>напрямки роботи</a>
-          {/* TODO add reviews section */}
           {/* <a href={'#reviews' || ''} className={styles.link}>відгуки</a> */}
           <a href={'#fleet' || ''} className={styles.link}>автопарк</a>
           <a href={'#employment' || ''} className={styles.link}>працевлаштування</a>

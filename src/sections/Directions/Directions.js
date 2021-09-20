@@ -16,7 +16,7 @@ const Directions = () => {
         <Modal isOpen={!!direction} close={() => setDirection(null)}>
           <div className={styles.modalContent}>
             <div className={styles.flag}>
-              {direction.flag}
+              <img src={direction.flag} alt={direction.flag} />
             </div>
             <div className={styles.title}>
               {direction.country}
@@ -58,7 +58,7 @@ const Directions = () => {
               <div className={styles.content}>
                 <div>
                   <div className={styles.img}>
-                    {direction.flag}
+                    <img src={direction.flag} alt={direction.flag} />
                   </div>
                   <div className={styles.title}>
                     {direction.country}

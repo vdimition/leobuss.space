@@ -21,7 +21,11 @@ const Menu = () => {
           <img src={logo} alt="logo LeoBus" />
         </div>
         <div className={styles.btnWrapper}>
-          <a href="tel:+38 093 113 35 91" className={styles.btnImage}>
+          <a
+            href="https://invite.viber.com/?g2=AQBdG4kaUqWx2Esjj72vk8ru%2FuxKtnDrR5IEWy6OrX3d6McHd8dD3YEj3LJYj6bv"
+            className={styles.btnImage}
+          >
+
             <img src={viber} alt="viber" />
           </a>
           <a href="https://www.facebook.com/groups/leobus" className={styles.btnImage}>
@@ -32,7 +36,7 @@ const Menu = () => {
               <img src={vector} alt="vector" />
             </div>
             <div className={styles.phone}>
-              +380 12 245 45 45
+              +380 67 268 63 53
             </div>
           </button>
         </div>
@@ -43,11 +47,11 @@ const Menu = () => {
             </div>
             <div className={styles.line} />
             <a href="tel:+38 093 113 35 91" className={styles.content}>
-              +38 093 113 35 91
+              +380 93 170 23 51
             </a>
             <div className={styles.line} />
-            <a href="tel:+380 12 245 45 45" className={styles.content}>
-              +380 12 245 45 45
+            <a href="tel:+380 67 268 63 53" className={styles.content}>
+              +380 67 268 63 53
             </a>
             <div className={styles.line} />
             <div className={styles.title}>

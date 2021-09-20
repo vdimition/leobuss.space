@@ -3,9 +3,9 @@ import React from 'react';
 import Carousel from '../../components/Carousel/Carousel';
 import useGetCall from '../../hocks/useGetCall';
 
-import vacancies3 from '../../images/vacancies1.svg';
+import vacancies1 from '../../images/vacancies1.svg';
 import vacancies2 from '../../images/vacancies2.svg';
-import vacancies1 from '../../images/vacancies3.svg';
+import vacancies3 from '../../images/vacancies3.svg';
 
 import styles from './Vacancies.module.scss';
 
